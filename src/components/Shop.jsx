@@ -1,0 +1,114 @@
+import React, { useRef } from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import ProductCard from "../layouts/ProductCard";
+
+const Shop = () => {
+  const data = [
+    {
+      img: "/src/assets/img/product1.jpg",
+      name: "Nike Air",
+      price: "$198.00",
+      discount: "20% Off",
+    },
+    {
+      img: "/src/assets/img/product2.jpg",
+      name: "Sportswear Futura",
+      price: "$208.00",
+      discount: "40% Off",
+    },
+    {
+      img: "/src/assets/img/product3.jpg",
+      name: "Royal Collection",
+      price: "$104.00",
+      discount: "35% Off",
+    },
+    {
+      img: "/src/assets/img/product4.jpg",
+      name: "t-shirt combo pack",
+      price: "$299.00",
+      discount: "40% Off",
+    },
+    {
+      img: "/src/assets/img/product5.jpg",
+      name: "CozyCraze Hoodies",
+      price: "$159.00",
+      discount: "23% Off",
+    },
+    {
+      img: "/src/assets/img/product6.jpg",
+      name: "LuxeLoom Purses",
+      price: "$189.00",
+      discount: "30% Off",
+    },
+  ];
+
+  const slider = useRef(null);
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    pauseOnHover: true,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 1023,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 2,
+        },
+      },
+    ],
+  };
+
+  return (
+    <div className=" min-h-screen flex flex-col justify-center lg:px-32 px-5 pt-14">
+      {/* heading section */}
+      <div>
+        <h1 className=" font-semibold text-4xl text-center text-ExtraDarkColor">
+          Best sellers
+        </h1>
+      </div>
+
+      {/* carousel section */}
+      <div className=" mt-8">
+        <Slider ref={slider} {...settings}>
+          {data.map((e, index) => (
+            <ProductCard
+              key={index}
+              img={e.img}
+              name={e.name}
+              price={e.price}
+              discount={e.discount}
+            />
+          ))}
+        </Slider>
+      </div>
+    </div>
+  );
+};
+
+export default Shop;
