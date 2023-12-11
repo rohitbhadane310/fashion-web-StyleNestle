@@ -145,6 +145,7 @@ const Navbar = ({ setShowCart }) => {
             smooth={true}
             duration={500}
             className=" hover:text-black transition duration-300 ease-in-out cursor-pointer"
+            onClick={closeMenu}
           >
             Products
           </Link>

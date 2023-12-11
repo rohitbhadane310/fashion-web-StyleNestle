@@ -9,6 +9,8 @@ import { Provider } from "react-redux";
 import { store } from "./redux/store";
 import Cart from "./components/Cart";
 import Products from "./components/Products";
+import Collections from "./components/Collections";
+import Footer from "./components/Footer";
 
 const App = () => {
   const [showCart, setShowCart] = useState(false);
@@ -28,6 +30,8 @@ const App = () => {
           <Shop />
         </div>
 
+        <Collections />
+
         <div id="features">
           <Features />
         </div>
@@ -39,6 +43,8 @@ const App = () => {
         <div id="review">
           <Review />
         </div>
+
+        <Footer />
 
         <Toaster position="bottom-center" reverseOrder={false} />
       </Provider>

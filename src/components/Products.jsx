@@ -27,7 +27,7 @@ const Products = () => {
   ];
 
   return (
-    <div className=" min-h-screen flex flex-col justify-center lg:px-32 px-5 pt-14">
+    <div className=" min-h-screen flex flex-col justify-center px-5 pt-24 lg:pt-16">
       {/* heading section */}
       <div>
         <h1 className=" font-semibold text-4xl text-center text-ExtraDarkColor">
@@ -36,7 +36,7 @@ const Products = () => {
       </div>
 
       {/* Cards section */}
-      <div className=" flex gap-5 pt-8">
+      <div className=" flex flex-wrap justify-center gap-5 pt-8">
         {data.map((item) => (
           <ProductCard
             key={item.id}

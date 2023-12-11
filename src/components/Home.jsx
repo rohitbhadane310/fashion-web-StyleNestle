@@ -14,7 +14,7 @@ const Home = () => {
           fashion but a reflection of your unique style.
         </p>
 
-        <button className=" bg-ExtraDarkColor text-white px-4 py-2 font-medium">
+        <button className=" bg-ExtraDarkColor text-white px-4 py-2 font-medium active:bg-amber-800">
           shop now
         </button>
       </div>
