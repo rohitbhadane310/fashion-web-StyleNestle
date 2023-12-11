@@ -8,6 +8,7 @@ import { Toaster } from "react-hot-toast";
 import { Provider } from "react-redux";
 import { store } from "./redux/store";
 import Cart from "./components/Cart";
+import Products from "./components/Products";
 
 const App = () => {
   const [showCart, setShowCart] = useState(false);
@@ -29,6 +30,10 @@ const App = () => {
 
         <div id="features">
           <Features />
+        </div>
+
+        <div id="products">
+          <Products />
         </div>
 
         <div id="review">

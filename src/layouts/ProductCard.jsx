@@ -30,7 +30,7 @@ const ProductCard = ({ id, img, name, price, discount }) => {
       <div className=" flex flex-col justify-center items-center">
         <h1 className=" font-semibold text-xl pt-4">{name}</h1>
         <div className=" flex gap-10 pt-2">
-          <h2 className=" font-medium text-lg ">{price}</h2>
+          <h2 className=" font-medium text-lg ">${price}</h2>
           <h2 className=" font-medium text-DarkColor">{discount}</h2>
         </div>
 

@@ -61,6 +61,15 @@ const Navbar = ({ setShowCart }) => {
               Features
             </Link>
             <Link
+              to="products"
+              spy={true}
+              smooth={true}
+              duration={500}
+              className=" hover:text-black transition duration-300 ease-in-out cursor-pointer"
+            >
+              Products
+            </Link>
+            <Link
               to="review"
               spy={true}
               smooth={true}
@@ -68,15 +77,6 @@ const Navbar = ({ setShowCart }) => {
               className=" hover:text-black transition duration-300 ease-in-out cursor-pointer"
             >
               Review
-            </Link>
-            <Link
-              to="blog"
-              spy={true}
-              smooth={true}
-              duration={500}
-              className=" hover:text-black transition duration-300 ease-in-out cursor-pointer"
-            >
-              Blog
             </Link>
           </nav>
 
@@ -140,6 +140,15 @@ const Navbar = ({ setShowCart }) => {
             Features
           </Link>
           <Link
+            to="products"
+            spy={true}
+            smooth={true}
+            duration={500}
+            className=" hover:text-black transition duration-300 ease-in-out cursor-pointer"
+          >
+            Products
+          </Link>
+          <Link
             to="review"
             spy={true}
             smooth={true}
@@ -148,16 +157,6 @@ const Navbar = ({ setShowCart }) => {
             onClick={closeMenu}
           >
             Review
-          </Link>
-          <Link
-            to="blog"
-            spy={true}
-            smooth={true}
-            duration={500}
-            className=" hover:text-DarkColor transition duration-300 ease-in-out cursor-pointer"
-            onClick={closeMenu}
-          >
-            Blog
           </Link>
         </div>
       </section>

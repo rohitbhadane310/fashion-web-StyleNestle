@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -50,8 +50,6 @@ const Shop = () => {
     },
   ];
 
-  const slider = useRef(null);
-
   const settings = {
     dots: true,
     infinite: true,
@@ -101,7 +99,7 @@ const Shop = () => {
 
       {/* carousel section */}
       <div className=" mt-8">
-        <Slider ref={slider} {...settings}>
+        <Slider {...settings}>
           {data.map((item) => (
             <ProductCard
               key={item.id}

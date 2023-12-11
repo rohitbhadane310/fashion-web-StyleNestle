@@ -13,7 +13,7 @@ const CartProduct = ({ id, img, title, price, quantity }) => {
         <div className="space-y-2">
           <h3 className="font-medium">{title}</h3>
           <p className="text-gray-600 text-[14px]">Qty: {quantity}</p>
-          <p className="text-gray-600 text-[14px]">Price: {price}</p>
+          <p className="text-gray-600 text-[14px]">Price: ${price}</p>
         </div>
       </div>
 
