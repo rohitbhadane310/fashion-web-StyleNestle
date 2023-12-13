@@ -7,6 +7,9 @@ import { RiMenu2Line } from "react-icons/ri";
 import { useAppSelector } from "../redux/hooks";
 
 const Navbar = ({ setShowCart }) => {
+
+  // functions for handling menu section in react
+
   const [menu, setMenu] = useState(false);
 
   const handleChange = () => {
@@ -17,6 +20,8 @@ const Navbar = ({ setShowCart }) => {
     setMenu(false);
   };
 
+
+  // redux logic 
   const cartCount = useAppSelector((state) => state.cartReducer.length);
 
   return (
@@ -32,6 +37,7 @@ const Navbar = ({ setShowCart }) => {
             </Link>
           </div>
 
+          {/* nav elements */}
           <nav className=" hidden lg:flex flex-row items-center text-lg font-semibold gap-8 text-ExtraDarkColor">
             <Link
               to="home"
@@ -80,6 +86,7 @@ const Navbar = ({ setShowCart }) => {
             </Link>
           </nav>
 
+          {/* nav icons */}
           <div className="flex items-center gap-5">
             <FaUser size={25} className=" text-DarkColor" />
             <div className=" text-DarkColor relative">
@@ -94,6 +101,7 @@ const Navbar = ({ setShowCart }) => {
             </div>
           </div>
 
+          {/* menu icon */}
           <div className=" lg:hidden flex items-center">
             {menu ? (
               <AiOutlineClose size={28} onClick={handleChange} />
