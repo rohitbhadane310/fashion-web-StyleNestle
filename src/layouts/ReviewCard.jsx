@@ -1,28 +1,14 @@
 import React from "react";
-import { FaQuoteRight } from "react-icons/fa";
-import { BsStarHalf } from "react-icons/bs";
-import { BsStarFill } from "react-icons/bs";
+import { ImQuotesLeft } from "react-icons/im";
 
-const ReviewCard = (props) => {
+const ReviewCard = ({ name }) => {
   return (
-    <div className=" flex flex-col w-full lg:w-2/6 border-2 border-DarkColor p-3 rounded-lg gap-5">
-      <div className=" flex flex-row items-center lg:justify-start justify-center">
-        <div className="w-1/4">
-          <img className=" rounded-full" src={props.img} alt="img" />
-        </div>
-        <div className=" mx-3">
-          <h2 className=" font-semibold text-lg">{props.title}</h2>
-          <div className=" flex">
-            <BsStarFill className=" text-DarkColor" />
-            <BsStarFill className=" text-DarkColor" />
-            <BsStarFill className=" text-DarkColor" />
-            <BsStarFill className=" text-DarkColor" />
-            <BsStarHalf className=" text-DarkColor" />
-          </div>
-        </div>
-        <span className=" ml-16">
-          <FaQuoteRight className=" text-ExtraDarkColor" size={42} />
-        </span>
+    <div className=" flex flex-col w-full lg:w-2/6 border-2 border-DarkColor p-3 rounded-lg gap-5 cursor-pointer hover:bg-PrimaryColor transition duration-300 ease-in-out">
+      <div>
+        <ImQuotesLeft size={25} />
+        <h1 className=" text-xl font-semibold text-ExtraDarkColor pt-4">
+          {name}
+        </h1>
       </div>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet

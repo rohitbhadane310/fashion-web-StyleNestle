@@ -1,79 +1,100 @@
 import React from "react";
 import { Link } from "react-scroll";
+import { FaFacebook } from "react-icons/fa6";
+import { RiTwitterXLine } from "react-icons/ri";
+import { RiInstagramFill } from "react-icons/ri";
 
 const Footer = () => {
   return (
-    <div className=" bg-PrimaryColor text-ExtraDarkColor rounded-t-3xl mt-8 md:mt-0">
+    <footer className=" bg-PrimaryColor text-ExtraDarkColor rounded-t-3xl mt-8 md:mt-0">
       <div className="flex flex-col md:flex-row justify-between p-8 md:px-32 px-5">
-        <div className=" w-full md:w-1/4">
-          <h1 className=" font-semibold text-xl pb-4">WellnessVista</h1>
-          <p className=" text-sm">
-            Our team of dedicated doctors, each specializing in unique fields
-            such as orthopedics, cardiology, pediatrics, neurology, dermatology,
-            and more.
-          </p>
+        <div>
+          <h1 className=" font-semibold text-3xl pb-4">StyleNestle</h1>
+          <div className=" flex gap-5 ml-3">
+            <FaFacebook
+              size={32}
+              className="hover:scale-110 cursor-pointer transition duration-300 ease-in-out"
+            />
+            <RiTwitterXLine
+              size={32}
+              className="hover:scale-110 cursor-pointer transition duration-300 ease-in-out"
+            />
+            <RiInstagramFill
+              size={32}
+              className="hover:scale-110 cursor-pointer transition duration-300 ease-in-out"
+            />
+          </div>
         </div>
         <div>
-          <h1 className=" font-medium text-xl pb-4 pt-5 md:pt-0">About Us</h1>
-          <nav className=" flex flex-col gap-2">
+          <h1 className=" font-medium text-xl pb-4 pt-5 md:pt-0">Shop</h1>
+          <div className=" flex flex-col gap-2">
             <Link
-              to="about"
+              to="/"
               spy={true}
               smooth={true}
               duration={500}
-              className=" hover:text-hoverColor transition-all cursor-pointer"
+              className=" hover:scale-105 cursor-pointer transition duration-300 ease-in-out"
             >
-              About
+              Products
             </Link>
             <Link
-              to="services"
+              to="/"
               spy={true}
               smooth={true}
               duration={500}
-              className=" hover:text-hoverColor transition-all cursor-pointer"
+              className=" hover:scale-105 cursor-pointer transition duration-300 ease-in-out"
             >
-              Services
+              Overview
             </Link>
             <Link
-              to="doctors"
+              to="/"
               spy={true}
               smooth={true}
               duration={500}
-              className=" hover:text-hoverColor transition-all cursor-pointer"
+              className=" hover:scale-105 cursor-pointer transition duration-300 ease-in-out"
             >
-              Doctors
+              Pricing
             </Link>
-          </nav>
+          </div>
         </div>
         <div>
-          <h1 className=" font-medium text-xl pb-4 pt-5 md:pt-0">Services</h1>
+          <h1 className=" font-medium text-xl pb-4 pt-5 md:pt-0">Company</h1>
           <nav className=" flex flex-col gap-2">
             <Link
-              to="services"
+              to="/"
               spy={true}
               smooth={true}
               duration={500}
-              className=" hover:text-hoverColor transition-all cursor-pointer"
+              className=" hover:scale-105 cursor-pointer transition duration-300 ease-in-out"
             >
-              Lab Test
+              About us
             </Link>
             <Link
-              to="services"
+              to="/"
               spy={true}
               smooth={true}
               duration={500}
-              className=" hover:text-hoverColor transition-all cursor-pointer"
+              className=" hover:scale-105 cursor-pointer transition duration-300 ease-in-out"
             >
-              Health Check
+              Contact
             </Link>
             <Link
-              to="services"
+              to="/"
               spy={true}
               smooth={true}
               duration={500}
-              className=" hover:text-hoverColor transition-all cursor-pointer"
+              className=" hover:scale-105 cursor-pointer transition duration-300 ease-in-out"
             >
-              Heart Health
+              News
+            </Link>
+            <Link
+              to="/"
+              spy={true}
+              smooth={true}
+              duration={500}
+              className=" hover:scale-105 cursor-pointer transition duration-300 ease-in-out"
+            >
+              Support
             </Link>
           </nav>
         </div>
@@ -84,7 +105,7 @@ const Footer = () => {
               123 Elm Street, Suite 456 Springfield, IL 62701 United States
             </Link>
             <Link to="/" spy={true} smooth={true} duration={500}>
-              support@care.com
+              fashion@style.com
             </Link>
             <Link to="/" spy={true} smooth={true} duration={500}>
               +123-456-7890
@@ -95,11 +116,11 @@ const Footer = () => {
       <div>
         <p className=" text-center py-4">
           @copyright developed by
-          <span className=" text-hoverColor"> champion programmers</span> | All
+          <span className=" text-black"> champion programmers</span> | All
           rights reserved
         </p>
       </div>
-    </div>
+    </footer>
   );
 };
 
