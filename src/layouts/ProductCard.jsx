@@ -5,6 +5,8 @@ import { addToCart } from "../redux/features/cartSlice";
 import toast from "react-hot-toast";
 
 const ProductCard = ({ id, img, name, price, discount }) => {
+
+  // redux logic
   const dispatch = useAppDispatch();
 
   const addProductToCart = () => {

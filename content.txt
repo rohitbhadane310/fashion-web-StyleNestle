@@ -1,0 +1,142 @@
+colors: {
+    PrimaryColor: "#f5ebe0",
+    SecondaryColor: "#e3d5ca",
+    DarkColor: "#d4a373",
+    ExtraDarkColor: "#a98467",
+  },
+
+  shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]
+
+  # Home Component Content
+  Discovering and Defining Your Own Fashion!
+
+  Each item is a carefully chosen masterpiece, promising not just
+  fashion but a reflection of your unique style.
+
+
+  # Collection Banner content
+  Best Summer Collection
+
+  Sale Get Up To 60% off
+
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+  assumenda sapiente a iste hic explicabo laboriosam praesentium. Harum,
+  aperiam voluptatem!
+
+
+  #footer Component 
+
+  123 Elm Street, Suite 456 Springfield, IL 62701 United States
+  fashion@style.com
+  +123-456-7890
+
+
+
+  # Data for the products 
+
+
+  {
+    id: 0,
+    img: "/src/assets/img/product1.jpg",
+    name: "Nike Air",
+    price: "198.00",
+    discount: "20% Off",
+  },
+  {
+    id: 1,
+    img: "/src/assets/img/product2.jpg",
+    name: "Sportswear Futura",
+    price: "208.00",
+    discount: "40% Off",
+  },
+  {
+    id: 2,
+    img: "/src/assets/img/product3.jpg",
+    name: "Royal Collection",
+    price: "104.00",
+    discount: "35% Off",
+  },
+  {
+    id: 3,
+    img: "/src/assets/img/product4.jpg",
+    name: "t-shirt combo pack",
+    price: "299.00",
+    discount: "40% Off",
+  },
+  {
+    id: 4,
+    img: "/src/assets/img/product5.jpg",
+    name: "CozyCraze Hoodies",
+    price: "159.00",
+    discount: "23% Off",
+  },
+  {
+    id: 5,
+    img: "/src/assets/img/product6.jpg",
+    name: "LuxeLoom Purses",
+    price: "189.00",
+    discount: "30% Off",
+  },
+  {
+    id: 6,
+    img: "/src/assets/img/product7.jpg",
+    name: "FrostFire Outerlayers",
+    price: "398.00",
+    discount: "24% Off",
+  },
+  {
+    id: 7,
+    img: "/src/assets/img/product8.jpg",
+    name: "DaintyDoll Dresses",
+    price: "258.00",
+    discount: "40% Off",
+  },
+  {
+    id: 8,
+    img: "/src/assets/img/product9.jpg",
+    name: "TrendTraverse Bag",
+    price: "104.00",
+    discount: "35% Off",
+  },
+  {
+    id: 9,
+    img: "/src/assets/img/product10.jpg",
+    name: "Fitness Footgear",
+    price: "299.00",
+    discount: "40% Off",
+  },
+  {
+    id: 10,
+    img: "/src/assets/img/product11.jpg",
+    name: "UrbanBelle Hoodies",
+    price: "129.00",
+    discount: "28% Off",
+  },
+  {
+    id: 11,
+    img: "/src/assets/img/product12.jpg",
+    name: "Elite Handbags",
+    price: "189.00",
+    discount: "30% Off",
+  },
+  {
+    id: 12,
+    img: "/src/assets/img/product13.jpg",
+    name: "Canvas Sneakers",
+    price: "298.00",
+    discount: "28% Off",
+  },
+  {
+    id: 13,
+    img: "/src/assets/img/product14.jpg",
+    name: "shirt combo pack ",
+    price: "199.00",
+    discount: "40% Off",
+  },
+  {
+    id: 14,
+    img: "/src/assets/img/product15.jpg",
+    name: "Hublot watch",
+    price: "198.00",
+    discount: "26% Off",
+  },
